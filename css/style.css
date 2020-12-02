@@ -27,6 +27,8 @@
   height: 100%;
   width: 200px;
   position: relative;
+  font-size: 12px;
+  overflow-y: auto;
 }
 
 .navbar-content {
@@ -39,12 +41,16 @@
 
 .navbar-list {
   list-style-type: none;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .navbar-list li {
   margin: 10px 0;
-  font-size: 12px;
+}
+
+.navbar-list li a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .navbar-list img {
@@ -53,17 +59,57 @@
   margin-right: 10px;
 }
 
+#playlist-title {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.playlist a:first-of-type {
+  text-decoration: none;
+  color: inherit;
+}
+
+#crea-pl::before {
+  font-family: FontAwesome;
+  content: '\f0fe';
+  font-size: 50px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.navbar-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 180px;
+  background-color: black;
+  padding: 10px;
+  position: fixed;
+  margin-bottom: 80px;
+}
+
+.navbar-bottom img {
+  height: 15px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.navbar-bottom div:first-of-type::after {
+
+}
+
 .main-header {
   background-color: #080b12;
   height: 80px;
-  width: calc(100% - 200px);
+  width: calc(100% - 217px);
   position: relative;
   position: fixed;
 }
 
 .main-header div {
-  color: #a3a3a3;
-  border: 1px solid #a3a3a3;
+  color: white;
+  border: 1px solid white;
   border-radius: 20px;
   padding: 10px 40px;
   position: absolute;
@@ -111,7 +157,7 @@ h2 {
   padding: 20px;
 }
 
-.flex-albums-content, .doe-albums-content {
+.flex-albums-content, .albums-content {
   display: flex;
   padding: 30px 0;
 }
@@ -120,17 +166,17 @@ h2 {
   justify-content: space-between;
 }
 
-.flex-albums-content div, .doe-albums-content div {
+.flex-albums-content div, .albums-content div {
   width: 16%;
   text-align: center;
   display: inline-block;
 }
 
-.doe-albums-content div {
+.albums-content div {
   padding-right: 10px;
 }
 
-.flex-albums-content img, .doe-albums-content img {
+.flex-albums-content img, .albums-content img {
   width: 100%;
 }
 
@@ -147,6 +193,10 @@ h2 {
 .album-subtitle {
   color: #a3a3a3;
   font-size: 12px;
+}
+
+.circle-img img {
+  border-radius: 50%;
 }
 
 footer {
