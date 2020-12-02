@@ -2,17 +2,18 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Signika', sans-serif;
 }
 
 .wrapper {
-  height: 100vh;
+  height: calc(100vh - 90px);
   width: 100vw;
   max-width: 100%;
 }
 
 .clearfix {
   content: '';
-  display: table;
+  display: block;
   clear: both;
 }
 
@@ -22,21 +23,45 @@
 
 .navbar {
   background-color: black;
-  color: lightgrey;
+  color: #d2d2d2;
   height: 100%;
+  width: 200px;
 }
 
-.main {
-  height: 100%;
-  overflow-y: auto;
-  background-color: #141922;
+.navbar-content {
+  padding: 20px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 20px 0;
+}
+
+.list li {
+  margin: 10px 0;
+  font-size: 12px;
+}
+
+.list img {
+  height: 25px;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
 .main-header {
   background-color: #080b12;
   height: 90px;
   width: 100%;
-  position: fixed;
+}
+
+.main {
+  height: 100%;
+  overflow-y: auto;
+  background-color: #141922;
 }
 
 footer {
