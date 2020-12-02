@@ -56,7 +56,9 @@
 .main-header {
   background-color: #080b12;
   height: 80px;
+  width: calc(100% - 200px);
   position: relative;
+  position: fixed;
 }
 
 .main-header div {
@@ -84,6 +86,7 @@ h2 {
 
 .main-nav {
   text-align: center;
+  margin-top: 80px;
 }
 
 .main-nav-content {
