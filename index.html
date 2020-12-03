@@ -10,16 +10,17 @@
   </head>
   <body>
 
-    <div class="wrapper clearfix">
+    <div class="wrapper">
 
       <div class="navbar fl">
-        <div class="navbar-content">
-        <img class="logo" src="img/logo.svg" alt="">
+        <div class="navbar-top">
+          <img class="logo" src="img/logo.svg" alt="">
           <ul class="navbar-list">
             <li><a href=""><img src="img/home.svg" alt="">Home</a></li>
             <li><a href=""><img src="img/search.svg" alt="">Cerca</a></li>
             <li><a href=""><img src="img/libreria.svg" alt="">La tua libreria</a></li>
           </ul>
+        </div>
           <div class="playlist">
             <div id="playlist-title">PLAYLIST</div>
             <a href=""><div id="crea-pl">Crea Playlist</div></a>
@@ -33,10 +34,10 @@
               <li><a href="">Nome Playlist</a></li>
             </ul>
           </div>
-        </div>
         <div class="navbar-bottom">
-          <div><img src="img/download.svg" alt="">Installa app</div>
-          <div>John Doe</div>
+          <div><a href=""><img src="img/download.svg" alt="">Installa app</a></div>
+          <hr>
+          <div id="profile"><img src="img/profile.svg" alt="">John Doe</div>
         </div>
       </div>
 
@@ -61,70 +62,97 @@
         <div class="main-content">
           <h2>Recently played</h2>
           <div class="flex-albums-content">
-            <div>
-              <img src="img/heavy-metal.jpg" alt="">
+            <div class="album-container">
+              <a href=""><div class="album-img heavy-metal"><div class="opacity"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div></div></a>
               <div class="album-title">Heavy Metal</div>
               <div class="album-subtitle">Subtitle</div>
             </div>
-            <div>
-              <img src="img/stranger.jpeg" alt="">
+            <div class="album-container">
+              <a href=""><div class="album-img stranger-things"><div class="opacity"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div></div></a>
               <div class="album-title">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</div>
               <div class="album-subtitle">Kyle Dixon & Michael Stein</div>
             </div>
-            <div>
-              <img src="img/aquietplace.jpeg" alt="">
+            <div class="album-container">
+              <a href=""><div class="album-img a-quiet-place"><div class="opacity"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div></div></a>
               <div class="album-title">A quiet place</div>
               <div class="album-subtitle">Subtitle</div>
             </div>
-            <div>
-              <img src="img/split.jpeg" alt="">
+            <div class="album-container">
+              <a href=""><div class="album-img split"><div class="opacity"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div></div></a>
               <div class="album-title">Split</div>
               <div class="album-subtitle">Subtitle</div>
             </div>
-            <div>
-              <img src="img/cure.jpeg" alt="">
+            <div class="album-container">
+              <a href=""><div class="album-img cure-wellness"><div class="opacity"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div></div></a>
               <div class="album-title">A cure for wellness</div>
               <div class="album-subtitle">Subtitle</div>
             </div>
-            <div>
-              <img src="img/sinister.jpeg" alt="">
+            <div class="album-container">
+              <a href=""><div class="album-img sinister"><div class="opacity"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div></div></a>
               <div class="album-title">Sinister</div>
               <div class="album-subtitle">Subtitle</div>
             </div>
           </div>
 
           <h2>Creato per John Doe</h2>
-          <div class="album-subtitle">Più ascolti, più accurati saranno i suggerimenti.</div>
+          <div class="album-subtitle pad-tb">Più ascolti, più accurati saranno i suggerimenti.</div>
           <div class="albums-content">
-            <div>
-              <img src="img/radar.jpeg" alt="">
+            <div class="album-container">
+              <a href=""><div class="album-img radar"><div class="opacity"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div></div></a>
               <div class="album-title">Release Radar</div>
             </div>
-            <div>
-              <img src="img/mixdaily.jpeg" alt="">
+            <div class="album-container">
+              <a href=""><div class="album-img dailymix"><div class="opacity"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div></div></a>
               <div class="album-title">Daily Mix 1</div>
             </div>
           </div>
 
           <h2>Artisti più popolari</h2>
-          <div class="album-subtitle">Più ascolti, più accurati saranno i suggerimenti.</div>
-          <div class="albums-content circle-img">
-            <div>
-              <img src="img/youg.jpeg" alt="">
+          <div class="album-subtitle pad-tb">Più ascolti, più accurati saranno i suggerimenti.</div>
+          <div class="albums-content">
+            <div class="album-container">
+              <a href=""><div class="album-img lanadr"><div class="opacity circle"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div></div></a>
               <div class="album-title">Lana Del Rey</div>
             </div>
-            <div>
-              <img src="img/einaudi.jpeg" alt="">
+            <div class="album-container">
+              <a href=""><div class="album-img einaudi"><div class="opacity circle"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div></div></a>
               <div class="album-title">Ludovico Einaudi</div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
+    <footer>
+
+      <div class="left-footer">
+        <img src="img/sinister.jpeg" alt="">
+        <div id="footer-song-title">Sinister<br>
+          <span id="footer-song-subtitle">Brano Nome</span>
+        </div>
+        <a href=""><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-folder-o" aria-hidden="true"></i></a>
       </div>
 
-      <footer></footer>
+      <div class="center-footer">
+        <div class="footer-icons-container">
+          <a href=""><i class="fa fa-random" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-step-backward" aria-hidden="true"></i></a>
+          <a href=""><i id="play" class="fa fa-play-circle-o" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-step-forward" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-repeat" aria-hidden="true"></i></a>
+        </div>
+        <span class="time">0:00</span><div class="song-bar"></div><span class="time">4:35</span>
+      </div>
 
-    </div>
+      <div class="right-footer">
+        <a href=""><i class="fa fa-list" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-television" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-volume-up" aria-hidden="true"></i></a>
+        <div class="volume-bar"></div>
+      </div>
+
+    </footer>
 
   </body>
 </html>
