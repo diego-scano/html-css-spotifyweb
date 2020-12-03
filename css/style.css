@@ -6,7 +6,7 @@
 }
 
 .wrapper {
-  height: 100vh;
+  height: calc(100vh - 80px);
   width: 100vw;
   max-width: 100%;
 }
@@ -28,6 +28,10 @@
 
 .navbar-top {
   overflow-y: hidden;
+}
+
+.small-logo {
+  display: none;
 }
 
 .logo {
@@ -315,7 +319,7 @@ footer {
   color: grey;
 }
 
-.left-footer a:first-of-type {
+#heart-folder {
   margin-left: 40px;
 }
 
@@ -345,7 +349,7 @@ footer {
   margin-right: 40px;
 }
 
-.center-footer i:last-of-type {
+.center-footer a:last-of-type {
   margin-right: 0;
 }
 
@@ -358,7 +362,7 @@ footer {
 }
 
 .song-bar {
-  width: 500px;
+  width: 80%;
   height: 4px;
   border-radius: 5px;
   background-color: grey;
@@ -386,3 +390,45 @@ footer {
   font-size: 10px;
   margin: 0 15px;
 }
+
+/*  M E D I A  Q U E R I E S  */
+
+/* MD */
+@media screen and (max-width: 992px) {
+
+  #heart-folder {
+    margin: 0;
+  }
+
+  .song-bar {
+    width: 50%;
+  }
+}
+/* end MD */
+
+/* SM */
+@media screen and (max-width: 768px) {
+
+}
+/* end SM */
+
+/* XS */
+@media screen and (max-width: 576px) {
+
+  .nav-txt, hr, .playlist, .logo {
+    display: none;
+  }
+
+  .navbar, .navbar-bottom {
+    width: 60px;
+  }
+
+  .main-header {
+    width: calc(100% - 60px);
+  }
+
+  .main-header div {
+    margin-right: 10px;
+  }
+}
+/* end XS */
